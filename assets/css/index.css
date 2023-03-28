@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: 'gta';
+    src: url('../police/gta.ttf');
+}
+.gta{
+    font-family: 'gta', Courier, monospace;
+    font-size: 1.5em;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/wallpapers/back.png);
+    background-size: 100%;
+}
+
+audio{
+    border-radius: 5px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Aside */
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+aside h2{
+    font-size: 50px;
+    max-width: 500px;
+    text-align: center;
+    color: #fff;
+}
+
+aside img{
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+aside label{
+    display: none;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 600px){
+    nav .onglets .link, nav h1
+    {
+        display: none;
+    }
+    nav 
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logomenu img{
+        display: none;
+    }
+}
+@media screen and (min-width:1000px){
+    .dropdown
+    {
+        display: none;
+    }
+}
+/* Fin Media queries */
+
+/*
+.xdebug-var-dump
+{
+    color: #fff;
+}*/
