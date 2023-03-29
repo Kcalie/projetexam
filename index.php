@@ -16,20 +16,18 @@
         <!--Header-->
         <?php include ('assets/includes/header.php'); ?>
 
-     
+    
         <aside>
             <label>Music <input name="music" id="music"></label>
             
             <audio src="assets/audio/Silent_Hill_Not_Tomorrow.mp3" controls loop></audio>         
             <h2><span class="gta">Games List</span></h2>
         </aside>
-      
+    
 
         <main>
             
         <!--Slider-->
-
-
 
         </main>
 

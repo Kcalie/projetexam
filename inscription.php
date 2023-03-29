@@ -23,11 +23,6 @@
             <div class="inscription">
                 <form name="inscription" method="POST" action="inscription_traitement.php">
                 <h2>Inscription</h2>
-                    <div class="inputbox">
-                        <i class="fa-regular fa-user"></i>
-                        <input type="text" name="pseudo" required>
-                        <label for="login">Pseudo :</label>
-                    </div>
 
                     <div class="inputbox">
                         <i class="fa-regular fa-envelope"></i>
