@@ -1,4 +1,7 @@
 <?php
+/*ini_set('display_errors',false);*/
+/*doit être appelée au début de chaque page qui utilise les sessions.*/ 
+session_start();
 // On définit les paramètres de connexion à la base de données
 $DB_HOST = 'localhost';
 $DB_USER = 'root';
@@ -29,13 +32,12 @@ $bdd = pdo_connect();
 
 // pour verifié la connexion en recupérant l'adresse mail
 
-$query = $bdd->query('SELECT * FROM utilisateurs');
-
+/*$query = $bdd->query('SELECT * FROM utilisateurs');
 if($query->rowCount() > 0){
     while($row = $query->fetch()){
         echo $row['utilisateurs_email']."<br />";
     }
 }else{
     echo "Pas de résultats";
-}
+}*/
 ?>
