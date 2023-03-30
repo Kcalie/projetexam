@@ -1,5 +1,5 @@
 <?php
-/*ini_set('display_errors',false);*/
+ini_set('display_errors',false);
 /*doit être appelée au début de chaque page qui utilise les sessions.*/ 
 session_start();
 // On définit les paramètres de connexion à la base de données
