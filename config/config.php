@@ -1,4 +1,5 @@
 <?php
+/*pour enlever les notice*/ 
 ini_set('display_errors',false);
 /*doit être appelée au début de chaque page qui utilise les sessions.*/ 
 session_start();
