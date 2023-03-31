@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 30 mars 2023 à 11:19
+-- Généré le : ven. 31 mars 2023 à 12:57
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `utilisateurs_date_inscription` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `utilisateurs_role` enum('Admin','Users') DEFAULT 'Users',
   PRIMARY KEY (`utilisateurs_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `utilisateurs`
