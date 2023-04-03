@@ -28,8 +28,8 @@
                             echo '<a class="link" href="deconnexion.php">Deconnexion</a>';
                         }
                         ?>
-                    <form method="GET">
-                        <input type="search" placeholder="Search">
+                    <form method="GET" action="recherche.php">
+                        <input type="search" name="search" placeholder="Search">
                     </form>
                     <p>
                         <a href="form.php"><i class="fa-solid fa-user"></i></a>
