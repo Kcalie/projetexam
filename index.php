@@ -31,6 +31,7 @@ include('config/config.php');
         <main>
             
         <!--Slider-->
+        <a class="link" href="config/formproduits.php">Formulaire Produits</a>
 
         </main>
 

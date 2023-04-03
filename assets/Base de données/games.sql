@@ -50,3 +50,21 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+DROP TABLE IF EXISTS `produits`;
+CREATE TABLE IF NOT EXISTS `produits` (
+  `produits_id` int(11) NOT NULL AUTO_INCREMENT,
+  `produits_nom` varchar(100) NOT NULL,
+  `produits_prix` decimal(190) NOT NULL,
+  `produits_description` text(500) NOT NULL,
+  `produits_image` varchar(190) NOT NULL,
+  `produits_date_ajout` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`produits_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+/*
+OK - créé la bdd
+OK - crée un formulaire avec les champs : nom , prix , description, images
+OK - nregistre dans la base de données faire comme inscription traitement.php
+OK - pour l'image = is_uploaded_file, 
+move_upload_files
+*/
