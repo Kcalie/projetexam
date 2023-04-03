@@ -5,11 +5,6 @@ faire passer en get la categorie (rock ou autres)
 requete sql where categorie = categorie en get
 verif que 1 produit est sortie avec rowcount
 si oui faire une boucle foreach pour sortir tout les prod de la meme cat
-
-get mot recherche
-requete sql en condition where produit nom = mot recherché
-verif de produits si oui boucle 
-<i class="fa-solid fa-magnifying-glass"></i>
 */ 
 ?>
 <!DOCTYPE html>
