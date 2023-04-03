@@ -68,3 +68,7 @@ OK - nregistre dans la base de données faire comme inscription traitement.php
 OK - pour l'image = is_uploaded_file, 
 move_upload_files
 */
+
+/*cree categorie.php
+-> aporter config.php
+reprendre tous le code html de rockstar.php*/

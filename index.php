@@ -32,6 +32,8 @@ include('config/config.php');
             
         <!--Slider-->
         <a class="link" href="config/formproduits.php">Formulaire Produits</a>
+        <a class="link" href="categorie.php">categorie.php</a>
+        <a class="link" href="recherche.php">recherche.php</a>
 
         </main>
 

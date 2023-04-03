@@ -28,7 +28,7 @@
                             echo '<a class="link" href="deconnexion.php">Deconnexion</a>';
                         }
                         ?>
-                    <form>
+                    <form method="GET">
                         <input type="search" placeholder="Search">
                     </form>
                     <p>
