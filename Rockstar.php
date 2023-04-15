@@ -107,7 +107,7 @@ require('config/config.php');
                 </div>
 
                 <div class="card">
-                    <img src="assets/images/rockstar/eflc.png" alt="">
+                    <img src="assets/images/rockstar/eflc.jpg" alt="">
                     <div class="card-header">
                         <h4 class="title">GTA Episodes From Liberty City</h4>
                     </div>

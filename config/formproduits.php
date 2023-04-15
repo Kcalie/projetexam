@@ -7,12 +7,11 @@
     <title>Formulaire produits</title>
 </head>
 <body>
-
         <section>
                 <div class="form-box">
                     <div class="inscription">
                         <form name="" method="POST" action="../produits_traitement.php" enctype="multipart/form-data">
-                        <h2>Produits</h2>
+                        <h2>Ajouter un Produit</h2>
                             <div class="inputbox">
                             <label for="nom">Nom :</label></br>
                             <input type="text" name="nom" required>
