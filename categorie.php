@@ -25,7 +25,6 @@ si oui faire une boucle foreach pour sortir tout les prod de la meme cat
         <!--Header-->
         <?php include ('assets/includes/header.php'); ?>
 
-        
         <div class="top">
             <h1><span class="gta">Rockstar Games</span></h1>
             <img src="assets/images/rockstar/logo.png" alt="">
@@ -39,7 +38,7 @@ si oui faire une boucle foreach pour sortir tout les prod de la meme cat
             <div class="cards">
 
                 <div class="card">
-                    <img src="assets/images/rockstar/sa.jpg" alt="">
+                    <a href="test.php"><img src="assets/images/rockstar/sa.jpg" alt=""></a>
                     <div class="card-header">
                         <h4 class="title">GTA San Andreas</h4>
                     </div>
