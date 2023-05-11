@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face{
+    font-family: 'gta';
+    src: url('../police/gta.ttf');
+}
+.gta{
+    font-family: 'gta', Courier, monospace;
+    font-size: 1.5em;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0%;
+    background-color: #e8e5c4;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top h1{
+    font-size: 50px;
+    max-width: 500px;
+    text-align: center;
+}
+.top img{
+    padding: 15px 20px;
+    border: none;
+    width: 4%;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* Section principale */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px;
+}
+
+/* Cards */
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cards .card{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.cards .card img{
+    width: 230px;
+}
+.cards .card .card-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cards .card .card-body p{
+    margin-top: -22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Fin cards */
+
+/* Video */
+.main .video{
+    margin-top: 80px;
+}
+.main .video .iframe{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+/* Fin video */
+/* Fin section principale */
+
+/* Media queries */
+@media screen and (max-width: 600px){
+    nav .onglets .link, nav h1
+    {
+        display: none;
+    }
+    nav 
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logomenu img{
+        display: none;
+    }
+    .gta
+    {
+        font-family: 'gta', Courier, monospace;
+        font-size: 1em;
+    }
+    .top img
+    {
+        padding: 15px 20px;
+        border: none;
+        width: 14%;
+        border-radius: 5px;
+        outline: none;
+    }
+
+}
+@media screen and (min-width:1000px){
+    .dropdown
+    {
+        display: none;
+    }
+}
+
+/* Fin Media queries */

@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: 'gta';
+    src: url('../police/gta.ttf');
+}
+.gta{
+    font-family: 'gta', Courier, monospace;
+    font-size: 1.5em;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0%;
+    background-color: #000;
+}
+
+/*Formulaire*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(../images/wallpapers/mafia11.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(110, 12, 12, 0.56) 0px 2px 12px 4px;
+}
+h2{
+    font-family: 'gta', Courier, monospace;
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 10%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+}
+
+.inputbox input{
+    width: 85%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.inputbox i{
+    position: absolute;
+    bottom: 75%;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+}
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.forget label input{
+    margin-right: 3px;
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+    border-top: 2px solid darkred;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+.form-box2{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(110, 12, 12, 0.56) 0px 2px 12px 4px;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px){
+    nav .onglets .link, nav h1
+    {
+        display: none;
+    }
+    nav 
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logomenu img{
+        display: none;
+    }
+    .dropdown{
+        z-index: 7 !important;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #000;
+        background: url(../images/wallpapers/mafia11.jpg)no-repeat;
+        background-position-y: -150px;
+        background-position-x: -120px;
+    }
+    .form-box{
+        background: transparent;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
+@media screen and (min-width:1000px){
+    .dropdown
+    {
+        display: none;
+    }
+}
+/* Fin Media queries */
+
