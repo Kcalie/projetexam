@@ -12,8 +12,9 @@ body{
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
     padding: 0px;
-    background-image: url(../images/wallpapers/back.png);
-    background-size: 100%;
+    /* background-image: url(../images/wallpapers/back.png);
+    background-size: 100%; */
+    background-color: black;
 }
 
 audio{
@@ -29,27 +30,29 @@ aside{
     align-items: center;
     flex-direction: column;
 }
-aside h2{
+.presentation{
+    display: flex;
+    border: solid white 5px;
+    margin: 10px;
+}
+section h1{
     font-size: 50px;
-    max-width: 500px;
     text-align: center;
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
-
-aside img{
-    padding: 15px 20px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    cursor: pointer;
+section p{
+    color: #fff;
+    margin-left: 15px;
+}
+.imgpresentation img{
+    height: 180px;
+    width: auto;
 }
 aside label{
     display: none;
 }
-
-/* Carousel */
-/*Fin Carousel*/
 
 /* Media queries */
 @media screen and (max-width: 600px){
@@ -66,6 +69,56 @@ aside label{
         display: none;
     }
 }
+/*Carousel*/
+.carousel{
+    display: grid;
+    place-items: center;
+    padding-top: 10px;
+}
+.slider{
+    background: #fff;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slide-track{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 60s linear infinite;/*Scroll Time*/
+}
+.slide-track:hover{
+    animation-play-state: paused;
+}
+/*Auto Scroll*/
+@keyframes scroll{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+/*Fin Auto Scroll*/
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat light';
+    font-weight: bold;
+    color: #474747;
+    padding: 5px;
+    perspective: 100px;
+}
+.slide img{
+    width: 100%;
+    transition: transform 1s;
+}
+/*Fin Carousel*/
 @media screen and (min-width:1000px){
     .dropdown
     {
