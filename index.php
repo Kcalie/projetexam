@@ -26,8 +26,10 @@ include('config/config.php');
     <section>
 
         <h1><span class="gta">Presentation</span></h1>
+        <div class="imgpresentationresp"><img src="assets/images/wallpapers/gs.png" alt="cj.png"></div>
 
     <div class="presentation">
+
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ad veniam magni a voluptates est iste! Adipisci voluptas reprehenderit, 
             error ullam optio facere distinctio unde amet possimus fugiat id esse?
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ad veniam magni a voluptates est iste! Adipisci voluptas reprehenderit, 

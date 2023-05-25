@@ -1,13 +1,13 @@
 /* Footer */
 footer{
+    display: flex;
+    justify-content: space-around;
     color: #000;
     background-color: #fff;
     width: 100%;
+}
 
-}
-footer p{
-    margin-left: 15px;
-}
+
 
 
 /* Fin footer */
