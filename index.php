@@ -40,68 +40,66 @@ include('config/config.php');
         <div class="imgpresentation"><img src="assets/images/wallpapers/cjback.png" alt="cj.png"></div>
     </div>
 
-    <!--Carousel-->
+<!--Carousel-->
 <div class="carousel">
   <div class="slider">
     <div class="slide-track">
 <!--Images-->
       <div class="slide">
-        <img src="assets/images/rockstar/sa.jpg" alt="eunji01">
+        <img src="assets/images/rockstar/vc.jpg" alt="eunji01">
       </div>
       <div class="slide">
-        <img src="assets/images/rockstar/man.jpg" alt="eunji02">
+        <img src="assets/images/rockstar/sa.jpg" alt="eunji02">
       </div>
       <div class="slide">
-        <img src="assets/images/rockstar/war.jpg" alt="eunji03">
+        <img src="assets/images/rockstar/man.jpg" alt="eunji03">
       </div>
       <div class="slide">
-        <img src="assets/images/gtalike/sf.jpg" alt="eunji04">
+        <img src="assets/images/rockstar/war.jpg" alt="eunji04">
       </div>
       <div class="slide">
-        <img src="assets/images/gtalike/sr2.jpg" alt="eunji05">
+        <img src="assets/images/rockstar/V.jpg" alt="eunji05">
       </div>
       <div class="slide">
-        <img src="assets/images/gtalike/sd.jpg" alt="eunji06">
+        <img src="assets/images/gtalike/m2.jpg" alt="eunji06">
       </div>
       <div class="slide">
-        <img src="assets/images/gtalike/tcla.jpg" alt="eunji07">
+        <img src="assets/images/gtalike/sr2.jpg" alt="eunji07">
       </div>
       <div class="slide">
-        <img src="assets/images/gtalike/lp.jpg" alt="eunji08">
+        <img src="assets/images/gtalike/tcla.jpg" alt="eunji08">
       </div>
       <div class="slide">
-        <img src="assets/images/rockstar/war.jpg" alt="eunji09">
+        <img src="assets/images/gtalike/lp.jpg" alt="eunji09">
       </div>
       <div class="slide">
-        <img src="img/1.jpg" alt="eunji01">
+        <img src="assets/images/rockstar/vc.jpg" alt="eunji01">
       </div>
       <div class="slide">
-        <img src="img/2.jpg" alt="eunji02">
+        <img src="assets/images/rockstar/sa.jpg" alt="eunji02">
       </div>
       <div class="slide">
-        <img src="img/c.JPEG" alt="eunji03">
+        <img src="assets/images/rockstar/man.jpg" alt="eunji03">
       </div>
       <div class="slide">
-        <img src="img/4.jpg" alt="eunji04">
+        <img src="assets/images/rockstar/war.jpg" alt="eunji04">
       </div>
       <div class="slide">
-        <img src="img/5.jpg" alt="eunji05">
+        <img src="assets/images/rockstar/V.jpg" alt="eunji05">
       </div>
       <div class="slide">
-        <img src="img/6.jpg" alt="eunji06">
+        <img src="assets/images/gtalike/m2.jpg" alt="eunji06">
       </div>
       <div class="slide">
-        <img src="img/7.jpg" alt="eunji07">
+        <img src="assets/images/gtalike/sr2.jpg" alt="eunji07">
       </div>
       <div class="slide">
-        <img src="img/8.PNG" alt="eunji08">
+        <img src="assets/images/gtalike/tcla.jpg" alt="eunji08">
       </div>
       <div class="slide">
-        <img src="img/9.PNG" alt="eunji09">
+        <img src="assets/images/gtalike/lp.jpg" alt="eunji09">
       </div>
-<!--Fin Images-->
   </div>
-</div>
 </div>
 <!--Fin Carousel-->
 

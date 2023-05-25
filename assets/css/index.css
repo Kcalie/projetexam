@@ -54,26 +54,11 @@ aside label{
     display: none;
 }
 
-/* Media queries */
-@media screen and (max-width: 600px){
-    nav .onglets .link, nav h1
-    {
-        display: none;
-    }
-    nav 
-    {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .logomenu img{
-        display: none;
-    }
-}
 /*Carousel*/
 .carousel{
     display: grid;
     place-items: center;
-    padding-top: 10px;
+    margin-top: 30px;
 }
 .slider{
     background: #fff;
@@ -88,7 +73,7 @@ aside label{
 .slide-track{
     display: flex;
     width: calc(250px * 18);
-    animation: scroll 60s linear infinite;/*Scroll Time*/
+    animation: scroll 40s linear infinite;/*Scroll Time*/
 }
 .slide-track:hover{
     animation-play-state: paused;
@@ -108,17 +93,36 @@ aside label{
     width: 250px;
     display: flex;
     align-items: center;
-    font-family: 'Montserrat light';
-    font-weight: bold;
-    color: #474747;
     padding: 5px;
     perspective: 100px;
 }
-.slide img{
+img{
+    height: 240px;
     width: 100%;
     transition: transform 1s;
 }
+img:hover{
+    transform: translateZ(20px);
+}
 /*Fin Carousel*/
+
+/* Media queries */
+
+@media screen and (max-width: 600px){
+    nav .onglets .link, nav h1
+    {
+        display: none;
+    }
+    nav 
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logomenu img{
+        display: none;
+    }
+}
+
 @media screen and (min-width:1000px){
     .dropdown
     {
