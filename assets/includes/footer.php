@@ -3,7 +3,7 @@
 
             <p>&copy; Kevin</p>
 
-            <div class="cgu"><p><a href="">Conditions générales d'utilisation</a></div>
+            <div class="cgu"><p><a href="includes/cgu.php">Mentions Légales</a></div>
 
             <div class="social-media">
                 <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>

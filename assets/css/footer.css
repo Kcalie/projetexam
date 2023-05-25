@@ -6,8 +6,11 @@ footer{
     background-color: #fff;
     width: 100%;
 }
-
-
-
-
+.social-media{
+    padding-top: 18px;
+}
+.social-media a{
+    font-size: 20px;
+    padding-left: 5px;
+}
 /* Fin footer */
