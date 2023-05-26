@@ -35,233 +35,30 @@ si oui faire une boucle foreach pour sortir tout les prod de la meme cat
         <section class="main">
 
             <!--Cartes-->
-            <div class="cards">
-
-                <div class="card">
-                    <a href="test.php"><img src="assets/images/rockstar/sa.jpg" alt=""></a>
-                    <div class="card-header">
-                        <h4 class="title">GTA San Andreas</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2004</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/rockstar/vc.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">GTA Vice City</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2002</p>
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/rockstar/3.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">GTA III</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2001</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/rockstar/vcs.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">GTA Vice City Stories</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2007</p>
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/rockstar/V.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">GTA V</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2013</p>
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/rockstar/lcs.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">GTA Liberty City Stories</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2005</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/rockstar/IV.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">GTA IV</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2008</p>
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/rockstar/eflc.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">GTA Episodes From Liberty City</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2010</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/rockstar/de.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">GTA Definitive Edition</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2021</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/rockstar/war.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">The Warriors</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2005</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/rockstar/man.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">Manhunt</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2003</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/gtalike/sr2.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">Saints Row 2</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2008</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/gtalike/sr3.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">Saints Row 3</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2011</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/gtalike/m1.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">Mafia</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2002</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/gtalike/m2.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">Mafia II</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2010</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/gtalike/m3.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">Mafia III</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2016</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/gtalike/sf.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">Scarface</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2006</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/gtalike/sd.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">Sleeping Dogs</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2012</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/gtalike/lp.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">Le Parrain</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2006</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/gtalike/lp2.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">Le Parrain 2</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2009</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/gtalike/tcla.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">True Crime : Streets of LA</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2003</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/gtalike/tcny.jpg" alt="">
-                    <div class="card-header">
-                        <h4 class="title">True Crime : New York City</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>2005</p>
-                    </div>
-                </div>          
-            </div>
-            <!--Fin cartes-->
+    <div class="container">
+		<div class="row">
+			<?php
+			// On se connecte à la base de données
+			include_once('config/config.php');
+			$bdd = pdo_connect();
+			// On récupère les produits de la base de données
+			$products = $bdd->query('SELECT * FROM produits');
+			// On affiche chaque produit sous forme de card
+			while($product = $products->fetch()) {
+				echo '<div class="col-sm-4">';
+				echo '<div class="card">';
+				echo '<img class="card-img-top" src="assets/uploads/'.$row['produits_image'].'" alt="Card image">';
+				echo '<div class="card-body">';
+				echo '<h4 class="card-title">'.$product['name'].'</h4>';
+				echo '<p class="card-text">'.$product['description'].'</p>';
+				echo '<p class="card-text">'.$product['price'].' €</p>';
+				echo '</div></div></div>';
+			}
+			// On termine la requête
+			$products->closeCursor();
+			?>
+		</div>
+	</div>
 
             <!--Vidéo-->
             <div class="video">

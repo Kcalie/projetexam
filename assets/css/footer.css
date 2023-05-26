@@ -1,13 +1,23 @@
 /* Footer */
 footer{
+    display: flex;
+    justify-content: space-around;
     color: #000;
     background-color: #fff;
     width: 100%;
-
 }
-footer p{
-    margin-left: 15px;
+.social-media{
+    padding-top: 18px;
 }
-
-
+.social-media a{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.cgu p a{
+    color: #000;
+    text-decoration: none;
+}
+.cgu p a:hover{
+    color: rgb(248, 41, 41);
+}
 /* Fin footer */
