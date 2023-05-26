@@ -11,6 +11,13 @@ footer{
 }
 .social-media a{
     font-size: 20px;
-    padding-left: 5px;
+    padding-left: 10px;
+}
+.cgu p a{
+    color: #000;
+    text-decoration: none;
+}
+.cgu p a:hover{
+    color: rgb(248, 41, 41);
 }
 /* Fin footer */
