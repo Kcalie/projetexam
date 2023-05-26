@@ -26,7 +26,7 @@
 
                     <div class="inputbox">
                         <i class="fa-regular fa-envelope"></i>
-                        <input type="email" name="email" required>
+                        <input type="email" name="email" onblur="verifEmail(this);" required>
                         <label for="email">Email :</label>
                     </div>
 

@@ -27,7 +27,7 @@
                 <h2>Connexion</h2>
                     <div class="inputbox">
                     <i class="fa-regular fa-envelope"></i>
-                    <input type="email" name="email" required>
+                    <input type="email" name="email" onblur="verifEmail(this);" required>
                     <label for="email">Email :</label>
                     </div>
 
@@ -56,6 +56,7 @@
             <?php include ('./assets/includes/footer.php'); ?>
         </footer>
         <!--Fin Footer-->
-        <script src="./assets/js/script.js"></script>
+
+        <script src="./assets/js/script.js"></script> 
 </body>
 </html>
