@@ -143,4 +143,20 @@ nav .onglets input{
         display: none;
     }
 }
+@media screen and (max-width: 1000px){
+    nav .onglets .link, nav h1
+    {
+        display: none;
+    }
+    nav 
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logomenu img{
+        display: none;
+    }
+}
+
+
 /* Fin Media queries */

@@ -25,7 +25,7 @@
             <div class="right">
                 <h2>Contacter nous</h2>
                 <input type="text" name="nom" class="field" placeholder="Votre Nom">
-                <input type="text" name="email" class="field" placeholder="Votre Email">
+                <input type="text" name="email" class="field" placeholder="Votre Email" onblur="verifEmailContact(this);">
                 <textarea name="message" class="field area" placeholder="Message"></textarea>
                 <button class="btn">Envoyer</button>
             </div>
