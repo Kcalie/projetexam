@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cgu.css">
+    
     <title>Conditions générales d'utilisation</title>
 </head>
 <body>
-    
+
     <h1>Conditions générales d'utilisation</h1>
 
     <p>Bienvenue sur notre site Internet dédié à la présentation des jeux similaires à Grand Theft Auto. Avant d'utiliser ce site, veuillez lire 

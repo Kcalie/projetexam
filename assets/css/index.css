@@ -138,11 +138,25 @@ img:hover{
         display: block;
     }
 }
-
+@media screen and (max-width:412px){
+    .imgpresentationresp img{
+        width: 391px;
+    }
+}
+@media screen and (max-width:360px){
+    .imgpresentationresp img{
+        width: 339px;
+    }
+}
 @media screen and (min-width:1000px){
     .dropdown
     {
         display: none;
+    }
+}
+@media screen and (max-width: 1000px){
+    .imgpresentation img{
+        padding-top:88px;
     }
 }
 /* Fin Media queries */
