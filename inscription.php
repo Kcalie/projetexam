@@ -21,24 +21,24 @@
     <section>
         <div class="form-box2">
             <div class="inscription">
-                <form name="inscription" method="POST" action="inscription_traitement.php">
+                <form name="inscription" method="POST" action="inscription_traitement.php" onsubmit="return verifForm2()">
                 <h2>Inscription</h2>
 
                     <div class="inputbox">
                         <i class="fa-regular fa-envelope"></i>
-                        <input type="email" name="email" onblur="verifEmail(this);" required>
+                        <input type="email" name="email" onblur="verifEmail(this);">
                         <label for="email">Email :</label>
                     </div>
 
                     <div class="inputbox">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" id="password1" name="password" onkeyup="verifPassword();" required>
+                        <input type="password" id="password1" name="password" onkeyup="verifPassword();">
                         <label for="password">Mot de passe :</label>
                     </div>
 
                     <div class="inputbox">
                         <i class="fa-solid fa-unlock"></i>
-                        <input type="password" id="password2" name="password2" onkeyup="verifPassword();" required>
+                        <input type="password" id="password2" name="password2" onkeyup="verifPassword();">
                         <label for="password2">Répéter Mot de passe :</label>
                     </div>
 
