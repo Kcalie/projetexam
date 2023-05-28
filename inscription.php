@@ -32,13 +32,13 @@
 
                     <div class="inputbox">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" name="password" required>
+                        <input type="password" id="password1" name="password" onkeyup="verifPassword();" required>
                         <label for="password">Mot de passe :</label>
                     </div>
 
                     <div class="inputbox">
                         <i class="fa-solid fa-unlock"></i>
-                        <input type="password" name="password2" required>
+                        <input type="password" id="password2" name="password2" onkeyup="verifPassword();" required>
                         <label for="password2">Répéter Mot de passe :</label>
                     </div>
 
@@ -48,7 +48,7 @@
                         <p>Vous avez un compte ? <a href="form.php">Connectez-vous</a></p>
                     </div>
                 </form>
-
+                <span id="passwordError" style="color: red;"></span>
                 <?php if(isset($message)): ?>
                     <p class="error"><?php echo $message; ?></p>
                 <?php endif; ?>
