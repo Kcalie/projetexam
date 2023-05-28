@@ -18,7 +18,7 @@
         <!--Fin Header-->
 
     <!--Formulaire de contact-->
-    <form name="contact" method="POST" action="contact_traitement.php">
+    <form name="contact" method="POST" action="contact_traitement.php" onsubmit="return verifForm3()">
     <div class="container">
         <div class="contact-box">
             <div class="left"></div>

@@ -23,17 +23,17 @@
     <section>
         <div class="form-box">
             <div class="inscription">
-                <form name="inscription" method="POST" action="connexion.php">
+                <form name="inscription" method="POST" action="connexion.php" onsubmit="return verifForm()">
                 <h2>Connexion</h2>
                     <div class="inputbox">
                     <i class="fa-regular fa-envelope"></i>
-                    <input type="email" name="email" onblur="verifEmail(this);" required>
+                    <input type="email" name="email" onblur="verifEmail(this);">
                     <label for="email">Email :</label>
                     </div>
 
                     <div class="inputbox">
                     <i class="fa-solid fa-lock"></i>
-                    <input type="password" name="password" required>
+                    <input type="password" name="password">
                     <label for="password">Mot de passe :</label>
                     </div>
 
