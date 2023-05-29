@@ -110,7 +110,6 @@ include('config/config.php');
   <img src="assets/images/rockstar/sa.jpg" alt="profile" class="profile">
 </div>
 
-<div class="modal"></div>
 <div class="popup_container">
             <section class="popup">
                 <div class="image_container">

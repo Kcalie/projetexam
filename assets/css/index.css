@@ -121,14 +121,7 @@ img:hover{
     margin: 10px;
     border: 2px solid pink;
 }
-.modal{
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 .popup_container{
     position: absolute;
     top: 0;
@@ -147,7 +140,7 @@ img:hover{
     width: 800px;
     color: #000000;
     font-size: larger;
-    background-color: #0e751f;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 5px;
     display: grid; /*separe en 2 l'ecran popup coté photo et coté texte*/
@@ -173,6 +166,9 @@ img:hover{
 .description_heading{
 letter-spacing: 5px;
 text-align: center;
+}
+.description p{
+    color: #000000;
 }
 /*ANIMATION*/
 @keyframes animationA {
