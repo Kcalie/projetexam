@@ -133,7 +133,18 @@ function verifForm() {
     return true;
   }
   
-  
+
+//  popup au click
+let profile = document.querySelector(".profile");
+let popup_container = document.querySelector(".popup_container");
+profile.addEventListener("click", function(){
+    popup_container.classList.toggle("active")
+})
+
+//  fermer le pop up en cliquant n'importe ou en dehors
+popup_container.addEventListener("click", function() {
+    popup_container.classList.toggle("active")/*si elle est active il va la desactiver sinon il ajoute*/ 
+})
   
   
 

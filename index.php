@@ -23,7 +23,7 @@ include('config/config.php');
             <audio src="assets/audio/Silent_Hill_Not_Tomorrow.mp3" controls loop></audio>         
         </aside>
           
-    <section>
+<section>
 
         <h1><span class="gta">Presentation</span></h1>
         <div class="imgpresentationresp"><img src="assets/images/wallpapers/gs.png" alt="cj.png"></div>
@@ -103,10 +103,29 @@ include('config/config.php');
       </div>
   </div>
 </div>
+</div>
 <!--Fin Carousel-->
 
+<div class="lien_image">
+  <img src="assets/images/rockstar/sa.jpg" alt="profile" class="profile">
+</div>
 
-    </section>
+<div class="modal"></div>
+<div class="popup_container">
+            <section class="popup">
+                <div class="image_container">
+                    <img src="assets/images/rockstar/sa.jpg" alt="user_image">
+                </div>
+                <div class="description">
+                    <p class="description_heading">LIENS</p>
+                    <p>Email : eunji@gmail.com</p>
+                    <p>Telephone : 06 23 56 89 89</p>
+                    <p>Nom : Eunji Pyoapple</p>
+                </div>
+            </section>
+        </div>
+
+</section>
 
        
         <!--Liens-->
