@@ -16,6 +16,7 @@ si oui faire une boucle foreach pour sortir tout les prod de la meme cat
         <link rel="stylesheet" href="assets/css/rock.css">
         <link rel="stylesheet" href="assets/css/footer.css">
         <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/categorie.css">
         <script src="https://kit.fontawesome.com/22d6814c5f.js" crossorigin="anonymous"></script>
         <title>Jeux</title>
 
@@ -35,30 +36,33 @@ si oui faire une boucle foreach pour sortir tout les prod de la meme cat
         <section class="main">
 
             <!--Cartes-->
-    <div class="container">
-		<div class="row">
-			<?php
-			// On se connecte à la base de données
-			include_once('config/config.php');
-			$bdd = pdo_connect();
-			// On récupère les produits de la base de données
-			$products = $bdd->query('SELECT * FROM produits');
-			// On affiche chaque produit sous forme de card
-			while($product = $products->fetch()) {
-				echo '<div class="col-sm-4">';
-				echo '<div class="card">';
-				echo '<img class="card-img-top" src="assets/uploads/'.$row['produits_image'].'" alt="Card image">';
-				echo '<div class="card-body">';
-				echo '<h4 class="card-title">'.$product['name'].'</h4>';
-				echo '<p class="card-text">'.$product['description'].'</p>';
-				echo '<p class="card-text">'.$product['price'].' €</p>';
-				echo '</div></div></div>';
-			}
-			// On termine la requête
-			$products->closeCursor();
-			?>
-		</div>
-	</div>
+            <div class="container">
+    <div class="row">
+        <?php
+        // On se connecte à la base de données
+        include_once('config/config.php');
+        $bdd = pdo_connect();
+        // On récupère les produits de la base de données
+        $products = $bdd->query('SELECT * FROM produits');
+        // On affiche chaque produit sous forme de card
+        while ($product = $products->fetch(PDO::FETCH_ASSOC)) {
+            echo '<div class="col">';
+            echo '<div class="card">';
+            echo '<img class="card-img-top" src="uploads/'.$product['produits_image'].'" alt="Card image">';
+            echo '<div class="card-body">';
+            echo '<h4 class="card-title">'.$product['produits_nom'].'</h4>';
+            echo '<p class="card-text">'.$product['produits_prix'].' €</p>';
+            echo '<p class="card-text">'.$product['produits_description'].'</p>';
+            
+            echo '</div></div></div>';
+        }
+        // On termine la requête
+        $products->closeCursor();
+
+        ?>
+    </div>
+</div>
+
 
             <!--Vidéo-->
             <div class="video">
