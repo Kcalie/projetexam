@@ -27,7 +27,7 @@ si oui faire une boucle foreach pour sortir tout les prod de la meme cat
         <?php include ('assets/includes/header.php'); ?>
 
         <div class="top">
-            <h1><span class="gta">Rockstar Games</span></h1>
+            <h1><span class="gta">Games</span></h1>
             <img src="assets/images/rockstar/logo.png" alt="">
         </div>
 
