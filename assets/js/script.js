@@ -133,7 +133,7 @@ function verifForm() {
     return true;
   }
 
-//  popup N°1
+//  Modal (popup)
 let profile = document.querySelector(".profile");
 let popup_container = document.querySelector(".popup_container");
 profile.addEventListener("click", function(){
