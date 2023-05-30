@@ -53,7 +53,6 @@ si oui faire une boucle foreach pour sortir tout les prod de la meme cat
             echo '<h4 class="card-title">'.$product['produits_nom'].'</h4>';
             echo '<p class="card-text">'.$product['produits_prix'].' €</p>';
             echo '<p class="card-text">'.$product['produits_description'].'</p>';
-            
             echo '</div></div></div>';
         }
         // On termine la requête
