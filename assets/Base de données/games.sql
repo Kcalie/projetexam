@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 23 mai 2023 à 16:04
+-- Généré le : lun. 29 mai 2023 à 12:33
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -40,7 +40,8 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`contact_id`, `nom`, `email`, `message`, `date`) VALUES
-(1, 'kevin', 'ghj@gmail.com', 'ghjgjhjgjhjgjh', '2023-05-11 13:28:17');
+(1, 'kevin', 'ghj@gmail.com', 'ghjgjhjgjhjgjh', '2023-05-11 13:28:17'),
+(4, 'dfbjhj', 'fgj@gmail.com', 'jkdflkvhfdbhldjbh lkbk', '2023-05-26 18:17:52');
 
 -- --------------------------------------------------------
 
@@ -105,7 +106,7 @@ CREATE TABLE `utilisateurs` (
 --
 
 INSERT INTO `utilisateurs` (`utilisateurs_id`, `utilisateurs_email`, `utilisateurs_password`, `utilisateurs_date_inscription`, `utilisateurs_role`) VALUES
-(1, 'kevin.haraux@gmail.com', '12345', '2023-03-29 14:30:43', 'Users'),
+(11, 'kevin.haraux@gmail.com', '7c222fb2927d828af22f592134e8932480637c0d', '2023-05-26 19:23:50', 'Users'),
 (7, 'phil@gmail.com', '8cb2237d0679ca88db6464eac60da96345513964', '2023-03-30 10:40:34', 'Users'),
 (8, 'jess@gmail.com', '8cb2237d0679ca88db6464eac60da96345513964', '2023-03-30 13:18:20', 'Users');
 
@@ -139,7 +140,7 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `produits`
@@ -151,7 +152,7 @@ ALTER TABLE `produits`
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `utilisateurs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `utilisateurs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
