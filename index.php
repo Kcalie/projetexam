@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('config/config.php');
 ?>
 <!DOCTYPE html>
@@ -126,9 +127,22 @@ include('config/config.php');
 
 </section>
 
-       
         <!--Liens-->
-        <a class="link" href="config/formproduits.php">Formulaire Produits</a>
+        
+<?php
+
+
+
+
+
+
+if($_SESSION['utilisateurs']){
+  echo '        <a class="link" href="config/formproduits.php">Ajouter un Produit</a>
+  ';
+}
+
+?>
+
         <a class="link" href="categorie.php">categorie.php</a>
         <a class="link" href="recherche.php">recherche.php</a>
         <!--Footer-->
