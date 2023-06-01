@@ -8,6 +8,7 @@
                     <div class="option">
                         <a class="link" href="index.php">Home</a>
                         <a class="link" href="Rockstar.php">Rockstar</a>
+                        <a class="link" href="categorie.php">Games</a>
                         <a class="link" href="Gtalike.php">GtaLike</a>
                         <a class="link" href="contact.php">Contact</a>
                         <?php
@@ -21,6 +22,7 @@
                 <div class="onglets">
                     <a class="link" href="index.php">Home</a>
                     <a class="link" href="Rockstar.php">Rockstar</a>
+                    <a class="link" href="categorie.php">Games</a>
                     <a class="link" href="Gtalike.php">GtaLike</a>
                     <a class="link" href="contact.php">Contact</a>
                     <?php

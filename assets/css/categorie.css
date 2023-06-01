@@ -10,7 +10,7 @@
 }
 
 .card {
-    border: 3px solid #0eb20e; 
+    border: 1px solid #a4a4a4; 
     height: 750px;
     border-radius: 5px;
     padding: 10px;
@@ -36,7 +36,6 @@
 }
 
 /* Media queries */
-
 @media screen and (max-width: 600px){
     .row {
         display: block;
@@ -54,23 +53,13 @@
        text-align: center;
     }
 }
-@media screen and (max-width:412px){
-
-}
-@media screen and (max-width:360px){
-
-}
-@media screen and (min-width:1000px){
-
-}
 @media screen and (max-width: 1000px){
     .card-img-top {
         padding-left: 80px;
         height: 150px;
         width: auto;
     }
-    .card {
-        border: 3px solid #0eb20e; 
+    .card { 
         height: 600px; 
         width: 250px;
         border-radius: 5px;
@@ -78,6 +67,12 @@
     }
     .card-title {
        text-align: center;
+    }
+}
+@media screen and (max-width:412px){
+    .card { 
+        height: auto; 
+        width: 250px;
     }
 }
 /* Fin Media queries */

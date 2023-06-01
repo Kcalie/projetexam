@@ -12,9 +12,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
     padding: 0px;
-    /* background-image: url(../images/wallpapers/back.png);
-    background-size: 100%; */
-    background-color: black;
+    background-image: url(../images/rockstar/cj.png);
 }
 
 audio{
@@ -32,18 +30,18 @@ aside{
 }
 .presentation{
     display: flex;
-    border: solid white 5px;
+    border: solid rgb(255, 255, 255) 5px;
     margin: 10px;
 }
 section h1{
     font-size: 50px;
     text-align: center;
-    color: #fff;
+    color: #000000;
     margin: 0;
     padding: 0;
 }
 section p{
-    color: #fff;
+    color: #000000;
     margin-left: 15px;
 }
 .imgpresentation img{

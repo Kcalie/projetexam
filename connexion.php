@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Inclusion du fichier de configuration
 require('config/config.php');
 // Vérification si le formulaire a été soumis
