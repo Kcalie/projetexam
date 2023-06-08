@@ -47,7 +47,23 @@
                         ?>
                     </p>
                     <p>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="lien_image">
+                        <img src="assets/images/rockstar/sa.jpg" alt="profile" class="profile">
+                        </div>
+
+                        <div class="popup_container">
+                            <section class="popup">
+                                <div class="image_container">
+                                    <img src="assets/images/rockstar/sa.jpg" alt="user_image">
+                                </div>
+                                <div class="description">
+                                    <p class="description_heading">LIENS</p>
+                                    <p>Email : eunji@gmail.com</p>
+                                    <p>Telephone : 06 23 56 89 89</p>
+                                    <p>Nom : Eunji Pyoapple</p>
+                                </div>
+                            </section>
+                        </div>
                     </p>
                 </div>
             </nav>

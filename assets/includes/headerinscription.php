@@ -25,7 +25,6 @@
                         <a href="form.php"><i class="fa-solid fa-user"></i></a>
                     </p>
                     <p>
-                        <i class="fa-solid fa-cart-shopping"></i>
                     </p>
                 </div>
             </nav>
