@@ -12,7 +12,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background: #fff;
+    background-image: url(../images/rockstar/cj.png);
 }
 .container{
     display: flex;
@@ -77,8 +77,8 @@ h2:after{
 .area{
     min-height: 150px;
 }
-.btn{
-    width: 100%;
+button{
+    width: 111%;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
     background-color: #0096ff;
