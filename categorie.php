@@ -35,8 +35,8 @@ si oui faire une boucle foreach pour sortir tout les prod de la meme cat
         <!--Section Principale-->
         <section class="main">
 
-            <!--Cartes-->
-            <div class="container">
+        <!--Cartes-->
+<div class="container">
     <div class="row">
         <?php
         // On se connecte à la base de données
