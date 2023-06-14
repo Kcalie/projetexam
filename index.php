@@ -128,17 +128,26 @@ include('config/config.php');
 </section>
 
         <!--Liens-->
-        
+
 <?php
 
+if (isset($_SESSION['utilisateurs'])) {
+  // Assurez-vous d'avoir une connexion à la base de données
 
+  // Récupérer l'ID de l'utilisateur connecté depuis la session
+  $userID = $_SESSION['utilisateurs'];
 
+  // Effectuer une requête pour obtenir le rôle de l'utilisateur depuis la base de données
+  $query = "SELECT utilisateurs_role FROM utilisateurs WHERE utilisateurs_id = :userID";
+  $stmt = $bdd->prepare($query);
+  $stmt->bindParam(':userID', $userID);
+  $stmt->execute();
+  $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-
-
-if($_SESSION['utilisateurs']){
-  echo '        <a class="link" href="config/formproduits.php">Ajouter un Produit</a>
-  ';
+  // Vérifier si l'utilisateur a le rôle "Admin"
+  if ($user && $user['utilisateurs_role'] === 'Admin') {
+    echo '<a class="link" href="config/formproduits.php">Ajouter un Produit</a>';
+  }
 }
 
 ?>
