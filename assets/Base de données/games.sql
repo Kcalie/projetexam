@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 29 mai 2023 à 12:33
+-- Généré le : mer. 14 juin 2023 à 14:24
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -40,8 +40,10 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`contact_id`, `nom`, `email`, `message`, `date`) VALUES
-(1, 'kevin', 'ghj@gmail.com', 'ghjgjhjgjhjgjh', '2023-05-11 13:28:17'),
-(4, 'dfbjhj', 'fgj@gmail.com', 'jkdflkvhfdbhldjbh lkbk', '2023-05-26 18:17:52');
+(7, 'Test 01', 'gjhk@gmail.com', 'php objet test', '2023-06-08 12:08:16'),
+(8, 'Test 02', 'gjhk@gmail.com', 'php objet test 02', '2023-06-08 12:11:05'),
+(11, 'Test 03', 'gjhk@gmail.com', 'php objet test 03', '2023-06-08 12:31:17'),
+(12, 'test push', 'kevin@hmhmgmail.com', 'test test push', '2023-06-08 12:43:00');
 
 -- --------------------------------------------------------
 
@@ -65,7 +67,7 @@ CREATE TABLE `produits` (
 
 INSERT INTO `produits` (`produits_id`, `produits_nom`, `produits_prix`, `produits_description`, `produits_image`, `produits_date_ajout`, `categorie`) VALUES
 (3, 'Grand Theft Auto : San Andreas', 20, 'Les années 90 sont là aujourd\'hui, et il est temps pour Carl de rentrer à la maison. Sa mère a été assassinée, sa famille s\'est effondrée et ses amis d\'enfance courent au désastre.\r\n\r\nAlors qu\'il rentre chez lui, des policiers véreux lui collent un meurtre sur le dos. CJ se lance alors, contre son gré, dans un périple à travers l\'État de San Andreas pour tenter de sauver sa famille et prendre le contrôle de la rue.', 'sa.jpg', '2023-04-03 11:57:04', 'rockstar'),
-(4, 'Grand Theft Auto : Vice City', 20, 'Bienvenue dans les années 80 ! Située en plein dans la décennie des coiffures excentriques, des costumes pastel et des excès en tous genres, voici l\'histoire d\'un homme qui va gravir tous les échelons de la criminalité. Grand Theft Auto est de retour.\r\n\r\nVice City est une gigantesque zone urbaine virtuelle d\'une richesse inégalée. C\'est aussi la ville de tous les contrastes : des kilomètres de plages de sable fin côtoient des marais putrides. Les villas gigantesques des célébrités côtoient le ghetto. Ajoutez à cela un gameplay non-linéaire et un héros qui n\'a pas la langue dans sa poche, et vous obtiendrez une ville décadente, débordant de délices et de dépravations qui n\'attend plus que vous.', 'vc.jpg', '2023-04-03 12:05:14', 'rockstar'),
+(4, 'Grand Theft Auto : Vice City', 20, 'Bienvenue dans les années 80 ! Située en plein dans la décennie des coiffures excentriques, des excès en tous genres, voici l\'histoire d\'un homme qui va gravir tous les échelons de la criminalité. Grand Theft Auto est de retour.\r\n\r\nVice City est une gigantesque zone urbaine virtuelle d\'une richesse inégalée. Les villas gigantesques des célébrités côtoient le ghetto. Ajoutez à cela un gameplay non-linéaire et un héros qui n\'a pas la langue dans sa poche, et vous obtiendrez une ville décadente, débordant de délices et de dépravations qui n\'attend plus que vous.', 'vc.jpg', '2023-04-03 12:05:14', 'rockstar'),
 (5, 'Grand Theft Auto III', 20, 'Avec un monde ouvert aussi riche qu\'imposant, une multitude de personnages aux origines variées et une liberté d\'exploration totale, Grand Theft Auto III met l\'univers du crime à votre portée, dans tout ce qu\'il a de plus sombre, fascinant et impitoyable.', '3.jpg', '2023-04-03 12:09:57', 'rockstar'),
 (6, 'Grand Theft Auto : Vice City Stories', 14, 'Vice City, 1984. Les perspectives d\'avenir sont nombreuses dans une ville émergeant des marais, où la croissance est soutenue par les violentes luttes pour le contrôle du lucratif trafic de drogue. Les bétonnières tournent à plein régime tandis qu\'une grande métropole s\'élève sur les fondations du crime et de la trahison.', 'vcs.jpg', '2023-04-03 12:10:51', 'rockstar'),
 (7, 'Grand Theft Auto : Liberty City Stories', 14, 'Les rues de Liberty City sont en proie au chaos. Des mafiosi s\'affrontent pour le contrôle d\'une ville affaiblie par les politiciens corrompus, le crime organisé, le trafic de stupéfiants et les grèves. Toni essaie de nettoyer les dégâts du monde interlope. Des tueurs à gages dérangés, des hommes d\'affaires complètement immoraux, des politiciens cyniques et même sa propre mère essaient de lui barrer la route, alors qu\'il tente de reprendre le contrôle de la ville au nom des Leone.', 'lcs.jpg', '2023-04-03 12:11:52', 'rockstar'),
@@ -85,7 +87,8 @@ INSERT INTO `produits` (`produits_id`, `produits_nom`, `produits_prix`, `produit
 (21, 'Le Parrain 2', 25, 'Le Parrain II est un jeu d\'action sur PC se déroulant dans les années 1960, en Floride, à Cuba et à New York. Le joueur doit étendre son empire à d\'autres villes, pratiquer l\'extorsion, engager des hommes de main et défaire des familles ennemies pour devenir le clan familial le plus puissant d\'Amérique.', 'lp2.jpg', '2023-04-03 13:02:09', 'autres'),
 (22, 'True Crime : Streets Of LA', 9, 'True Crime : Streets of LA est un jeu d\'action disponible sur PS2. Le joueur incarne Nick Kang, un ancien flic de Los Angeles qui doit se battre contre les Triades. Vous avez la possibilité de vous balader dans la ville, à pied ou en voiture, afin de remplir des missions contre de dangereux malfrats. Action ou infiltration seront au rendez-vous.', 'tcla.jpg', '2023-04-03 13:03:04', 'autres'),
 (23, 'True Crime : New York City', 9, 'True Crime : New York City sur PS2 vous place dans la peau de Marcus Reed en pleine jungle urbaine. Ex-voyou reconverti en flic, à vous de mener vos missions comme il vous plaît : ripou ou intègre. Retrouvez l\'assassin de votre mentor en effectuant des missions pour un camp ou l\'autre. Arrestations, interrogatoires, courses-poursuites, extorsions... Tout est possible quand la loi est de votre côté.', 'tcny.jpg', '2023-04-03 13:03:51', 'autres'),
-(25, 'Grand Theft Auto : Episodes From Liberty City', 10, 'Grand Theft Auto : Episodes from Liberty City est une compilation sur PS3 qui regroupe les deux chapitres supplémentaires de GTA IV. Au programme : The Lost and Damned, et The Ballad of Gay Tony. Ces deux segments ne nécessitent pas le jeu original pour fonctionner !', 'episode.jpg', '2023-04-03 13:47:51', 'rockstar');
+(25, 'Grand Theft Auto : Episodes From Liberty City', 10, 'Grand Theft Auto : Episodes from Liberty City est une compilation sur PS3 qui regroupe les deux chapitres supplémentaires de GTA IV. Au programme : The Lost and Damned, et The Ballad of Gay Tony. Ces deux segments ne nécessitent pas le jeu original pour fonctionner !', 'episode.jpg', '2023-04-03 13:47:51', 'rockstar'),
+(28, 'Test', 1345, 'TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest', 'avatar4.png', '2023-06-01 11:58:10', 'rockstar');
 
 -- --------------------------------------------------------
 
@@ -106,7 +109,7 @@ CREATE TABLE `utilisateurs` (
 --
 
 INSERT INTO `utilisateurs` (`utilisateurs_id`, `utilisateurs_email`, `utilisateurs_password`, `utilisateurs_date_inscription`, `utilisateurs_role`) VALUES
-(11, 'kevin.haraux@gmail.com', '7c222fb2927d828af22f592134e8932480637c0d', '2023-05-26 19:23:50', 'Users'),
+(11, 'kevin.haraux@gmail.com', '7c222fb2927d828af22f592134e8932480637c0d', '2023-05-26 19:23:50', 'Admin'),
 (7, 'phil@gmail.com', '8cb2237d0679ca88db6464eac60da96345513964', '2023-03-30 10:40:34', 'Users'),
 (8, 'jess@gmail.com', '8cb2237d0679ca88db6464eac60da96345513964', '2023-03-30 13:18:20', 'Users');
 
@@ -140,13 +143,13 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT pour la table `produits`
 --
 ALTER TABLE `produits`
-  MODIFY `produits_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `produits_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT pour la table `utilisateurs`
