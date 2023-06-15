@@ -38,27 +38,52 @@ si oui faire une boucle foreach pour sortir tout les prod de la meme cat
         <!--Cartes-->
 <div class="container">
     <div class="row">
-        <?php
-        // On se connecte à la base de données
-        include_once('config/config.php');
-        $bdd = pdo_connect();
-        // On récupère les produits de la base de données
-        $products = $bdd->query('SELECT * FROM produits');
-        // On affiche chaque produit sous forme de card
-        while ($product = $products->fetch(PDO::FETCH_ASSOC)) {
-            echo '<div class="col">';
-            echo '<div class="card">';
-            echo '<img class="card-img-top" src="uploads/'.$product['produits_image'].'" alt="Card image">';
-            echo '<div class="card-body">';
-            echo '<h4 class="card-title">'.$product['produits_nom'].'</h4>';
-            echo '<p class="card-text">'.$product['produits_prix'].' €</p>';
-            echo '<p class="card-text">'.$product['produits_description'].'</p>';
-            echo '</div></div></div>';
-        }
-        // On termine la requête
-        $products->closeCursor();
+    <?php
+// On se connecte à la base de données
+include_once('config/config.php');
+$bdd = pdo_connect();
+// On récupère les produits de la base de données
+$products = $bdd->query('SELECT * FROM produits');
+// On affiche chaque produit sous forme de card
+while ($product = $products->fetch(PDO::FETCH_ASSOC)) {
+    echo '<div class="col">';
+    echo '<div class="card">';
+    echo '<img class="card-img-top" src="uploads/'.$product['produits_image'].'" alt="Card image">';
+    echo '<div class="card-body">';
+    echo '<h4 class="card-title">'.$product['produits_nom'].'</h4>';
+    echo '<p class="card-text">'.$product['produits_prix'].' €</p>';
+    echo '<p class="card-text">'.$product['produits_description'].'</p>';
+    echo '<div class="bouton-a">';
+    
+    // Vérifier si l'utilisateur est connecté en tant qu'admin
+    if (isset($_SESSION['utilisateurs'])) {
+        // Assurez-vous d'avoir une connexion à la base de données
 
-        ?>
+        // Récupérer l'ID de l'utilisateur connecté depuis la session
+        $userID = $_SESSION['utilisateurs'];
+
+        // Effectuer une requête pour obtenir le rôle de l'utilisateur depuis la base de données
+        $query = "SELECT utilisateurs_role FROM utilisateurs WHERE utilisateurs_id = :userID";
+        $stmt = $bdd->prepare($query);
+        $stmt->bindParam(':userID', $userID);
+        $stmt->execute();
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        // Vérifier si l'utilisateur a le rôle "Admin"
+        if ($user && $user['utilisateurs_role'] === 'Admin') {
+            // Bouton Modifier
+            echo '<a href="modifier.php?id='.$product['produits_id'].'" class="btn btn-primary">Modifier</a>';
+
+            // Bouton Supprimer
+            echo '<a href="supprimer.php?id='.$product['produits_id'].'" class="btn btn-danger">Supprimer</a>';
+        }
+    }
+
+    echo '</div></div></div></div>';
+}
+$products->closeCursor();
+?>
+
     </div>
 </div>
 
