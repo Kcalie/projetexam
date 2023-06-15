@@ -53,6 +53,21 @@
        text-align: center;
     }
 }
+.btn-primary, .btn-danger{
+    display: inline-block;
+    padding: 5px 30px;
+    background-color: #ffffff;
+    color: #010101;
+    margin-left: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.bouton-a{
+    text-align: center;
+}
+
+
 @media screen and (max-width: 1000px){
     .card-img-top {
         padding-left: 80px;
@@ -75,5 +90,6 @@
         width: 250px;
     }
 }
+
 /* Fin Media queries */
 

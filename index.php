@@ -106,7 +106,6 @@ include('config/config.php');
 </div>
 </div>
 <!--Fin Carousel-->
-
 <div class="lien_image">
   <img src="assets/images/rockstar/sa.jpg" alt="profile" class="profile">
 </div>
@@ -146,14 +145,12 @@ if (isset($_SESSION['utilisateurs'])) {
 
   // Vérifier si l'utilisateur a le rôle "Admin"
   if ($user && $user['utilisateurs_role'] === 'Admin') {
-    echo '<a class="link" href="config/formproduits.php">Ajouter un Produit</a>';
+    echo '<a class="linkbouton" href="config/formproduits.php">Ajouter un Produit</a>';
   }
 }
 
 ?>
-
-        <a class="link" href="categorie.php">categorie.php</a>
-        <a class="link" href="recherche.php">recherche.php</a>
+       
         <!--Footer-->
         <?php include ('assets/includes/footer.php'); ?>
 
