@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="assets/css/admin.css">
 <?php
 require('config/config.php');
 
@@ -51,18 +52,32 @@ if (isset($_GET['id'])) {
 
         // Affichez le formulaire de modification du produit ici
         ?>
-        
-        <form method="POST" action="modifier.php?id=<?php echo $id; ?>" enctype="multipart/form-data">
-            <label for="nom">Nom du produit:</label>
-            <input type="text" id="nom" name="nom" value="<?php echo $product['produits_nom']; ?>">
-            <label for="prix">Prix:</label>
-            <input type="text" id="prix" name="prix" value="<?php echo $product['produits_prix']; ?>">
-            <label for="description">Description:</label>
-            <textarea id="description" name="description"><?php echo $product['produits_description']; ?></textarea>
-            <label for="image">Nouvelle image :</label>
-            <input type="file" id="image" name="image">
-            <input type="submit" name="submit" value="Modifier">
-        </form>
+    <section>
+        <div class="form-box">
+            <div class="ajoutproduit">
+                <form method="POST" action="modifier.php?id=<?php echo $id; ?>" enctype="multipart/form-data">
+                <h2>Modifier</h2>
+                <div class="inputbox">
+                    <label for="nom">Nom :</label></br>
+                    <input type="text" id="nom" name="nom" value="<?php echo $product['produits_nom']; ?>">
+                </div>
+                <div class="inputbox">
+                    <label for="prix">Prix :</label></br>
+                    <input type="text" id="prix" name="prix" value="<?php echo $product['produits_prix']; ?>">
+                </div>
+                <div class="inputbox">
+                    <label for="description">Description :</label></br>
+                    <textarea id="description" name="description"><?php echo $product['produits_description']; ?></textarea>
+                </div>
+                <div class="inputbox">
+                    <label for="image">Nouvelle image :</label></br>
+                    <input type="file" id="image" name="image">
+                </div><br>
+                <button type="submit" name="submit">Enregistrer</button>
+                </form>
+            </div>
+        </div>
+    </section>
         
         <?php
     } else {

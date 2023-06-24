@@ -52,7 +52,7 @@ while ($product = $products->fetch(PDO::FETCH_ASSOC)) {
     echo '<div class="card-body">';
     echo '<h4 class="card-title">'.$product['produits_nom'].'</h4>';
     echo '<p class="card-text">'.$product['produits_prix'].' €</p>';
-    echo '<p class="card-text">'.$product['produits_description'].'</p>';
+    echo '<p class="card-text overflow">'.$product['produits_description'].'</p>';
     echo '<div class="bouton-a">';
     
     // Vérifier si l'utilisateur est connecté en tant qu'admin

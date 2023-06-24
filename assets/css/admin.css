@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'gta';
+    src: url('../police/gta.ttf');
+}
+.gta{
+    font-family: 'gta', Courier, monospace;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0%;
+    background-color: #000;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    width: 100%;
+    background: url(../images/rockstar/cj.png)no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 2px 12px 4px;
+}
+
+h2{
+    font-family: 'gta', Courier, monospace;
+    font-size: 3em;
+    color: #000000;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.inputbox{
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+}
+.inputbox input,.inputbox textarea {
+    margin-top: 10px;
+    width: 100%;
+}
+.inputbox textarea{
+    height: 90px;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
