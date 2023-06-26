@@ -2,9 +2,9 @@
 session_start();
 // Inclusion du fichier de configuration
 require('config/config.php');
-// Vérification si le formulaire a été soumis
+// Vérifie si le formulaire a été soumis
 if(isset($_POST['submit'])){
-    // Vérification si les champs email et password ne sont pas vides
+    // Vérifie si les champs email et password ne sont pas vides
     if(!empty($_POST['email']) && !empty($_POST['password'])){
         // Requête pour récupérer l'utilisateur correspondant à l'email et au mot de passe entrés
         $utilisateurs = $bdd->query('SELECT utilisateurs_id FROM `utilisateurs` WHERE `utilisateurs_email` = "'.$_POST['email'].'" AND `utilisateurs_password` = "'
@@ -20,11 +20,4 @@ if(isset($_POST['submit'])){
             }
     }
 }
-/* 
-1.verif si le form a été soumis
-2.verif si les champs ont une valeur
-3.requete sql SELECT pour verifier si l'utilisateurs existe
-4.verfier ave un rowcount si lutilisateur existe
-5.ensuite fetch object dans le header 
-*/ 
 ?>

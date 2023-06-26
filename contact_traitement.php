@@ -1,5 +1,5 @@
 <?php
-require('config/config.php'); // Inclusion du fichier de configuration
+require('config/config.php'); 
 
 class ContactForm
 {
@@ -19,22 +19,22 @@ class ContactForm
 
             if (empty($nom) || empty($email) || empty($message)) {
                 echo 'Veuillez remplir tous les champs du formulaire.'; // Vérification si tous les champs sont remplis
-                exit(); // Arrêt de l'exécution du script
+                exit(); 
             } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 echo 'Veuillez saisir une adresse email valide.'; // Vérification si l'adresse email est valide
-                exit(); // Arrêt de l'exécution du script
+                exit(); 
             }
 
             $stmt = $this->bdd->prepare('INSERT INTO contact (nom, email, message) VALUES (:nom, :email, :message)');
-            // Préparation de la requête d'insertion dans la table 'contact' avec des paramètres nommés (:nom, :email, :message)
-            $stmt->bindParam(':nom', $nom); // Liaison du paramètre :nom avec la variable $nom
-            $stmt->bindParam(':email', $email); // Liaison du paramètre :email avec la variable $email
-            $stmt->bindParam(':message', $message); // Liaison du paramètre :message avec la variable $message
+            // Préparation de la requête d'insertion dans la table 'contact' 
+            $stmt->bindParam(':nom', $nom); 
+            $stmt->bindParam(':email', $email); 
+            $stmt->bindParam(':message', $message); 
 
             if ($stmt->execute()) { // Exécution de la requête d'insertion
-                echo "Message enregistré avec succès."; // Affichage du message de réussite
+                echo "Message enregistré avec succès."; 
             } else {
-                echo "Erreur lors de l'enregistrement du message."; // Affichage du message d'erreur
+                echo "Erreur lors de l'enregistrement du message."; 
             }
         }
     }
