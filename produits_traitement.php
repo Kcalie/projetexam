@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
             /*verifie si le produits existe deja */ 
             $query = $bdd->query('SELECT * FROM produits WHERE `produits_id` = "'.$_POST['nom'].'"');
 
-            /*vérifie si la requête SQL n'a pas retourné de résultats en utilisant la méthode rowCount() de l'objet $query.*/ 
+            /*vérifie si la requête SQL n'a pas retourné de résultats.*/ 
             if($query->rowCount() == 0){
 
             /* Télécharge l'image et stocke son chemin d'accès dans la base de données */

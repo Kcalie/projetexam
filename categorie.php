@@ -1,12 +1,7 @@
 <?php
 require('config/config.php');
-/*
-faire passer en get la categorie (rock ou autres)
-requete sql where categorie = categorie en get
-verif que 1 produit est sortie avec rowcount
-si oui faire une boucle foreach pour sortir tout les prod de la meme cat
-*/ 
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -28,23 +23,22 @@ si oui faire une boucle foreach pour sortir tout les prod de la meme cat
 
         <div class="top">
             <h1><span class="gta">Games</span></h1>
-            <img src="assets/images/rockstar/logo.png" alt="">
+            <img src="assets/images/rockstar/logo.png" alt=""></div>
         </div>
 
+<!--Section Principale-->
+<section class="main">
 
-        <!--Section Principale-->
-        <section class="main">
-
-        <!--Cartes-->
-<div class="container">
-    <div class="row">
+<!--Cartes-->
+    <div class="container">
+        <div class="row">
     <?php
-// On se connecte à la base de données
+// connecte à la base de données
 include_once('config/config.php');
 $bdd = pdo_connect();
-// On récupère les produits de la base de données
+// récupère les produits de la base de données
 $products = $bdd->query('SELECT * FROM produits');
-// On affiche chaque produit sous forme de card
+// affiche chaque produit sous forme de card
 while ($product = $products->fetch(PDO::FETCH_ASSOC)) {
     echo '<div class="col">';
     echo '<div class="card">';
@@ -55,21 +49,20 @@ while ($product = $products->fetch(PDO::FETCH_ASSOC)) {
     echo '<p class="card-text overflow">'.$product['produits_description'].'</p>';
     echo '<div class="bouton-a">';
     
-    // Vérifier si l'utilisateur est connecté en tant qu'admin
+    // Vérifie si l'utilisateur est connecté en tant qu'admin
     if (isset($_SESSION['utilisateurs'])) {
-        // Assurez-vous d'avoir une connexion à la base de données
 
-        // Récupérer l'ID de l'utilisateur connecté depuis la session
+        // Récupére l'ID de l'utilisateur connecté depuis la session
         $userID = $_SESSION['utilisateurs'];
 
-        // Effectuer une requête pour obtenir le rôle de l'utilisateur depuis la base de données
+        // Effectue une requête pour obtenir le rôle de l'utilisateur depuis la base de données
         $query = "SELECT utilisateurs_role FROM utilisateurs WHERE utilisateurs_id = :userID";
         $stmt = $bdd->prepare($query);
         $stmt->bindParam(':userID', $userID);
         $stmt->execute();
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        // Vérifier si l'utilisateur a le rôle "Admin"
+        // Vérifie si l'utilisateur a le rôle "Admin"
         if ($user && $user['utilisateurs_role'] === 'Admin') {
             // Bouton Modifier
             echo '<a href="modifier.php?id='.$product['produits_id'].'" class="btn btn-primary">Modifier</a>';
@@ -83,36 +76,34 @@ while ($product = $products->fetch(PDO::FETCH_ASSOC)) {
 }
 $products->closeCursor();
 ?>
-
+        </div>
     </div>
-</div>
 
+    <!--Vidéo-->
+    <div class="video">
+        <!--Youtube : Cliquer 'partager' pui 'integrer' et copié le lien-->
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/mtyOXKB0M5o"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="allowfullscreen">
+        </iframe>
 
-            <!--Vidéo-->
-            <div class="video">
-                <!--Youtube : Cliquer 'partager' pui 'integrer' et copié le lien-->
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/mtyOXKB0M5o"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen="allowfullscreen">
-                </iframe>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/GDn-Y528aRQ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="allowfullscreen">
+        </iframe>
+    </div>
+    <!--Fin vidéo-->
 
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/GDn-Y528aRQ"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen="allowfullscreen">
-                </iframe>
-            </div>
-            <!--Fin vidéo-->
-
-        </section>
-        <!--Fin section Principale-->
+</section>
+<!--Fin section Principale-->
 
 
     <!--Footer-->

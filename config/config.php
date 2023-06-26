@@ -30,17 +30,6 @@ function pdo_connect()
 // On se connecte à la base de données en appelant la fonction pdo_connect()
 $bdd = pdo_connect();
 
-
-// pour verifié la connexion en recupérant l'adresse mail
-
-/*$query = $bdd->query('SELECT * FROM utilisateurs');
-if($query->rowCount() > 0){
-    while($row = $query->fetch()){
-        echo $row['utilisateurs_email']."<br />";
-    }
-}else{
-    echo "Pas de résultats";
-}*/
 ?>
 
 

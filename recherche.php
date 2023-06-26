@@ -16,11 +16,11 @@ require('config/config.php');
 
 include ('assets/includes/header.php'); 
 
-/*get mot recherche*/
+/*get mot recherché*/
 if(!empty($_GET['search'])){
     /*requete sql en condition where produit nom = mot recherché*/
     $query = $bdd->query('SELECT * FROM produits WHERE `produits_nom` LIKE "%'.$_GET['search'].'%"');
-    /*verif de produits si oui boucle */
+    /*verification de produits si oui boucle */
     if($query->rowCount() > 0){
         while($row = $query->fetch()){
             echo '<div class="all">';

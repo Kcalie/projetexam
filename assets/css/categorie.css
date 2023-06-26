@@ -1,3 +1,39 @@
+@font-face {
+    font-family: 'gta';
+    src: url('../police/gta.ttf');
+}
+.gta{
+    font-family: 'gta', Courier, monospace;
+    font-size: 1.5em;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/rockstar/cj.png);
+}
+.top
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top h1
+{
+    font-size: 50px;
+    max-width: 500px;
+    text-align: center;
+}
+.top img
+{
+    padding: 15px 20px;
+    border: none;
+    width: 4%;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +46,8 @@
 }
 
 .card {
-    border: 1px solid #a4a4a4; 
+    align-items: center;
+    border: 1px solid #a4a4a4;
     height: 750px;
     border-radius: 5px;
     padding: 10px;
@@ -34,13 +71,14 @@
     font-size: 14px;
     margin-bottom: 10px;
 }
-.overflow{
+.overflow {
     overflow: scroll;
     width: 530px;
     height: 90px;
 }
 
-.btn-primary, .btn-danger{
+.btn-danger,
+.btn-primary {
     display: inline-block;
     padding: 5px 30px;
     background-color: #ffffff;
@@ -48,13 +86,14 @@
     margin-left: 5px;
     text-decoration: none;
     border-radius: 5px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0px, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
 }
-.bouton-a{
+.bouton-a {
     text-align: center;
 }
+
 /* Media queries */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .row {
         display: block;
     }
@@ -63,37 +102,49 @@
         height: 150px;
         width: auto;
     }
-    .card { 
-        height: auto; 
+    .card {
+        height: auto;
         width: 250px;
     }
     .card-title {
-       text-align: center;
+        text-align: center;
+    }
+    .overflow {
+        display: none;
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
     .card-img-top {
         padding-left: 80px;
         height: 150px;
         width: auto;
     }
-    .card { 
-        height: 600px; 
+    .card {
+        height: 600px;
         width: 250px;
         border-radius: 5px;
         padding: 10px;
+        margin-left: 60px;
     }
     .card-title {
-       text-align: center;
+        text-align: center;
     }
+    .overflow {
+        width: 240px;
+        height: 240px;
+    }
+    .btn-danger, .btn-primary {
+        margin: 2px;
+    }
+    
 }
-@media screen and (max-width:412px){
-    .card { 
-        height: auto; 
+@media screen and (max-width:412px) {
+    .card {
+        height: auto;
         width: 250px;
+        margin-left: 60px;
     }
 }
 
 /* Fin Media queries */
-

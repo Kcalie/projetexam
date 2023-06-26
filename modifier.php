@@ -5,23 +5,23 @@ require('config/config.php');
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    // Vérifiez si le produit existe dans la base de données
+    // Vérifie si le produit existe dans la base de données
     $query = $bdd->prepare('SELECT * FROM produits WHERE produits_id = :id');
     $query->bindParam(':id', $id);
     $query->execute();
     $product = $query->fetch(PDO::FETCH_ASSOC);
 
     if ($product) {
-        // Traitez la modification du produit ici
+        // modification du produit 
 
         if (isset($_POST['submit'])) {
-            // Vérifiez si les champs ne sont pas vides
+            // Vérifie si les champs ne sont pas vides
             if (!empty($_POST['nom']) && !empty($_POST['prix']) && !empty($_POST['description'])) {
                 $nom = $_POST['nom'];
                 $prix = $_POST['prix'];
                 $description = $_POST['description'];
 
-                // Mettez à jour les informations du produit dans la base de données
+                // Met à jour les informations du produit dans la base de données
                 $query = $bdd->prepare('UPDATE produits SET produits_nom = :nom, produits_prix = :prix, produits_description = :description WHERE produits_id = :id');
                 $query->bindParam(':nom', $nom);
                 $query->bindParam(':prix', $prix);
@@ -29,15 +29,15 @@ if (isset($_GET['id'])) {
                 $query->bindParam(':id', $id);
                 $query->execute();
 
-                // Vérifiez si un nouveau fichier d'image a été téléchargé
+                // Vérifie si un nouveau fichier d'image a été téléchargé
                 if ($_FILES['image']['error'] !== UPLOAD_ERR_NO_FILE) {
-                    // Téléchargez la nouvelle image et stockez son chemin d'accès dans la base de données
+                    // Télécharge la nouvelle image et stockez son chemin d'accès dans la base de données
                     $target_dir = "uploads/";
                     $target_file = $target_dir . basename($_FILES["image"]["name"]);
                     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
                     move_uploaded_file($_FILES['image']['tmp_name'], $target_file);
 
-                    // Mettez à jour le chemin de l'image dans la base de données
+                    // Mette à jour le chemin de l'image dans la base de données
                     $query = $bdd->prepare('UPDATE produits SET produits_image = :image WHERE produits_id = :id');
                     $query->bindParam(':image', $_FILES['image']['name']);
                     $query->bindParam(':id', $id);
@@ -50,7 +50,7 @@ if (isset($_GET['id'])) {
             }
         }
 
-        // Affichez le formulaire de modification du produit ici
+        // formulaire de modification 
         ?>
     <section>
         <div class="form-box">
