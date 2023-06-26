@@ -83,17 +83,17 @@ $products->closeCursor();
     <div class="video">
         <!--Youtube : Cliquer 'partager' pui 'integrer' et copié le lien-->
         <iframe
-            width="560"
-            height="315"
+            width="410"
+            height="185"
             src="https://www.youtube.com/embed/mtyOXKB0M5o"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen="allowfullscreen">
         </iframe>
-
+        
         <iframe
-            width="560"
-            height="315"
+            width="410"
+            height="185"
             src="https://www.youtube.com/embed/GDn-Y528aRQ"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
